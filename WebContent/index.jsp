@@ -15,6 +15,10 @@
 	<s:form action="WelcomeAction">
 		<s:submit value="Welocome"/>
 	</s:form>
+
+	<s:form action="InquiryAction">
+		<s:submit value="問い合わせ"/>
+	</s:form>
 <body>
 
 </body>
