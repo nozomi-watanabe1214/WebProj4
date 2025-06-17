@@ -20,7 +20,7 @@ public class LoginDAO {
 		 Connection con = db.getConnection();
 
 		 String sql = "select * from users where user_name=? and password=?";
-		 try {
+		 try{
 			 PreparedStatement ps = con.prepareStatement(sql);
 			 ps.setString(1, username);
 			 ps.setString(2, password);
@@ -41,7 +41,7 @@ public class LoginDAO {
 			 } catch (SQLException e){
 				 e.printStackTrace();
 				 }
-		 try {
+		 try{
 			 con.close();
 			 } catch (SQLException e){
 				 e.printStackTrace();
